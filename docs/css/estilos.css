@@ -1,6 +1,9 @@
 
 
 
-.nav-link {
-    color: white;
-}
+.nav-link {   color: white;   }
+
+
+.carousel-control-next {   margin: 10%  }
+
+.carousel-control-prev {   margin: 10%  }
