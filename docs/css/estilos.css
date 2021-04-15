@@ -23,4 +23,12 @@ body { background-color: #ecf0f1;}
 }
 
 
+@media screen and (max-width: 1450px){
+    h3,h1 {font-size: 25px;}
+}
+
+
+
 .row {   padding-top: 100px; padding-left: 50px; padding-right: 50px; }
+
+#contru { position: fixed;}
