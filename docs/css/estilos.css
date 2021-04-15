@@ -2,11 +2,11 @@
 
 
 .nav-link {   color: white;   }
-body { background-color: gray;}
+body { background-color: #ecf0f1;}
 .carousel-control-next {   margin: 10%; height: 250px; }
 
 .carousel-control-prev {   margin: 10%; height: 250px; }
-.carousel-inner {   position: fixed; height: 60%;  }
+.carousel-inner {   height: 100%;  }
 
 
 #carouselExampleIndicators { height: 400px;}
@@ -19,3 +19,5 @@ body { background-color: gray;}
 @media screen and (max-width: 600px) {
     #carouselExampleIndicators { height: 200px;}
 }
+
+.row {   padding-top: 100px; }
