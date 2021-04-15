@@ -41,3 +41,15 @@ a { text-decoration: none;}
 .jumbotron { padding-left: 50px;}
 
 .b-example-divider { height: 5rem;}
+
+
+
+.i_purple { color: purple; font-weight: bold;}
+
+
+.i_red { color: tomato; font-weight: bold;}
+
+
+.i_white, .i_black { color: black; font-weight: bold;}
+
+
