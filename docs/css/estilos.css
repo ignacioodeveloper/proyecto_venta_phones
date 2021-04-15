@@ -2,16 +2,20 @@
 
 
 .nav-link {   color: white;   }
+body { background-color: gray;}
+.carousel-control-next {   margin: 10%; height: 250px; }
+
+.carousel-control-prev {   margin: 10%; height: 250px; }
+.carousel-inner {   position: fixed; height: 60%;  }
 
 
-.carousel-control-next {   margin: 10%  }
+#carouselExampleIndicators { height: 400px;}
 
-.carousel-control-prev {   margin: 10%  }
-
-.carousel-inner {   position: fixed;   }
-
-.carousel-indicators { position: fixed;  }
 
 @media screen and (max-width: 600px){
     .carousel-control-prev, .carousel-control-next { width: 50px; height: 250px;}
+}
+
+@media screen and (max-width: 600px) {
+    #carouselExampleIndicators { height: 200px;}
 }
