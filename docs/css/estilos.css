@@ -7,3 +7,11 @@
 .carousel-control-next {   margin: 10%  }
 
 .carousel-control-prev {   margin: 10%  }
+
+.carousel-inner {   position: fixed;   }
+
+.carousel-indicators { position: fixed;  }
+
+@media screen and (max-width: 600px){
+    .carousel-control-prev, .carousel-control-next { width: 50px; height: 250px;}
+}
