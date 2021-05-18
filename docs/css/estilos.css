@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+}
+
+
 .nav-link {
     color: white;
 }
@@ -62,6 +67,13 @@ a {
     color: black;
     font-weight: bold;
 }
+
+.footer_img {
+    text-align: center;
+    width: 100%;
+    
+}
+
 
 @media screen and (max-width: 600px) {
 
