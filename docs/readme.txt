@@ -10,3 +10,8 @@ Herramientas:
 
 Repositorio GIT
 https://github.com/luxossj/proyecto_venta_phones
+
+
+enlace video YT
+
+https://youtu.be/konzxHVkNXw

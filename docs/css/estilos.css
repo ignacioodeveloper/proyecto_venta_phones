@@ -1,55 +1,95 @@
-
-
-
-.nav-link {   color: white;   }
-body { background-color: #ecf0f1;}
-.carousel-control-next {   margin: 10%; height: 250px; }
-
-.carousel-control-prev {   margin: 10%; height: 250px; }
-.carousel-inner {   height: 100%;  }
-
-
-#carouselExampleIndicators { height: 400px;}
-
-
-@media screen and (max-width: 600px){
-    .carousel-control-prev, .carousel-control-next { width: 50px; height: 250px;}
-    #carouselExampleIndicators { height: 200px;}
-    .jumbotron, a { position: center; text-align: center; padding-left: 0px;}
-    
+.nav-link {
+    color: white;
 }
 
-@media screen and (max-width: 900px){
-    #card_1, #card_2 { display: none;}
-    .jumbotron, a { position: center; text-align: center; padding-left: 0px;}
+body {
+    background-color: #ecf0f1;
 }
 
+.carousel-control-next {
+    margin: 10%;
+    height: 250px;
+}
 
-@media screen and (max-width: 1450px){
-    h3,h1 {font-size: 25px;}
+.carousel-control-prev {
+    margin: 10%;
+    height: 250px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators {
+    height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    #carrusel {
+        display: none;
+    }
+    .jumbotron, a {
+        position: center;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #carrusel {
+        display: none;
+    }
+
+    a, p, h4 {
+        position: center;
+        text-align: center;
+    }
+
 
 }
 
+@media screen and (max-width: 1450px) {
+    h3, h1 {
+        font-size: 25px;
+        text-align: left;
+    }
+}
 
+.row {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
-.row {   padding-top: 100px; padding-left: 50px; padding-right: 50px; }
+#contru {
+    position: fixed;
+}
 
-#contru { position: fixed;}
+a {
+    text-decoration: none;
+}
 
-a { text-decoration: none;}
+.jumbotron {
+    padding-left: 50px;
+}
 
-.jumbotron { padding-left: 50px;}
+.b-example-divider {
+    height: 5rem;
+}
 
-.b-example-divider { height: 5rem;}
+/* iphone colors */
 
+.i_purple {
+    color: purple;
+    font-weight: bold;
+}
 
+.i_red {
+    color: tomato;
+    font-weight: bold;
+}
 
-.i_purple { color: purple; font-weight: bold;}
-
-
-.i_red { color: tomato; font-weight: bold;}
-
-
-.i_white, .i_black { color: black; font-weight: bold;}
-
-
+.i_white, .i_black {
+    color: black;
+    font-weight: bold;
+}
