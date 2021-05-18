@@ -25,13 +25,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    #carrusel {
-        display: none;
-    }
+
     .jumbotron, a {
         position: center;
         text-align: center;
         padding-left: 0px;
+    }
+
+    div.carousel-inner{
+        height: 185px;
     }
 
     h5 {
@@ -43,12 +45,27 @@ body {
         text-align: center;
     }
 
+    .carousel-control-next {
+        margin: 10%;
+        height: 250px;
+    }
+    
+    .carousel-control-prev {
+        margin: 10%;
+        height: 250px;
+    }
+    
+    .carousel-inner {
+        height: 100%;
+    }
+    
+    #carouselExampleIndicators {
+        height: 200px;
+
 }
 
 @media screen and (max-width: 900px) {
-    #carrusel {
-        display: none;
-    }
+
 
     a, p, h4 {
         position: center;
