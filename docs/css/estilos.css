@@ -2,6 +2,9 @@
     padding: 0;
 }
 
+h3 { text-align: center;}
+
+.text1 { font-size: 25px;}
 
 .nav-link {
     color: white;
