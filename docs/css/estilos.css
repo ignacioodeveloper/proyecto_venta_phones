@@ -19,24 +19,6 @@ body {
 }
 
 
-/* carousel */
-.carousel-control-next {
-    margin: 10%;
-    height: 250px;
-}
-
-.carousel-control-prev {
-    margin: 10%;
-    height: 250px;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-#carouselExampleIndicators {
-    height: 400px;
-}
 
 /*  */
 
@@ -62,5 +44,7 @@ a {
     width: 100%;
     
 }
+
+
 
 
