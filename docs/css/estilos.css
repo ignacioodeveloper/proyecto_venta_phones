@@ -2,18 +2,24 @@
     padding: 0;
 }
 
-h3 { text-align: center;}
 
 .text1 { font-size: 25px;}
 
+
+
+/* sticky menu */
 .nav-link {
     color: white;
 }
+/*  */
+
 
 body {
     background-color: #ecf0f1;
 }
 
+
+/* carousel */
 .carousel-control-next {
     margin: 10%;
     height: 250px;
@@ -32,11 +38,7 @@ body {
     height: 400px;
 }
 
-.row {
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+/*  */
 
 #contru {
     position: fixed;
@@ -54,92 +56,11 @@ a {
     height: 5rem;
 }
 
-/* iphone colors */
-
-.i_purple {
-    color: purple;
-    font-weight: bold;
-}
-
-.i_red {
-    color: tomato;
-    font-weight: bold;
-}
-
-.i_white, .i_black {
-    color: black;
-    font-weight: bold;
-}
 
 .footer_img {
     text-align: center;
     width: 100%;
     
 }
-
-
-@media screen and (max-width: 600px) {
-
-    .jumbotron, a {
-        position: center;
-        text-align: center;
-        padding-left: 0px;
-    }
-
-    div.carousel-inner{
-        height: 185px;
-    }
-
-    h5 {
-        display: none;
-    }
-
-    h1.card-text, h3.card-title {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .carousel-control-next {
-        margin: 10%;
-        height: 250px;
-    }
-    
-    .carousel-control-prev {
-        margin: 10%;
-        height: 250px;
-    }
-    
-    .carousel-inner {
-        height: 100%;
-    }
-    
-    #carouselExampleIndicators {
-        height: 200px;
-
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-
-    a, p, h4 {
-        position: center;
-        text-align: center;
-    }
-
-    h1, h3, h5 {
-        font-size: 25px;
-        text-align: left;
-    }
-
-}
-
-@media screen and (max-width: 1450px) {
-    h3, h1 {
-        font-size: 25px;
-        text-align: left;
-    }
-}
-
 
 
