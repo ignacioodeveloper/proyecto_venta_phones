@@ -55,5 +55,6 @@ $("#enviar").click(function() {
     let mensaje = $("#mensaje").val()
     let anuncio_email = $("#anuncio_email").is(":checked")
 
+    console.log(nombre)
 
 })
