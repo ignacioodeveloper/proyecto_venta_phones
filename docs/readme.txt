@@ -7,7 +7,7 @@ Herramientas:
 -Bootstrap
 -JS
 -FlexGrid
-
+-Jquery validation
 Repositorio GIT
 https://github.com/luxossj/proyecto_venta_phones
 
