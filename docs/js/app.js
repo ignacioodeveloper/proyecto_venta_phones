@@ -1,3 +1,6 @@
+
+
+// sticky menu
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
@@ -14,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function(){
   }); 
 
 
-
+  // menu iphone xr
   window.onload = function () {
     const colour_btn_els = document.querySelectorAll('.colores_iphone .colour');
-    const capacity_btn_els = document.querySelectorAll('.capacity .size');
+    const almacenamiento_btn_els = document.querySelectorAll('.almacenamiento .size');
     const imagery_el = document.querySelector('.imagery');
     const image_el = document.querySelector('.imagery .image');
   
-    for (let i = 0; i < capacity_btn_els.length; i++) {
-      let btn = capacity_btn_els[i];
+    for (let i = 0; i < almacenamiento_btn_els.length; i++) {
+      let btn = almacenamiento_btn_els[i];
   
       btn.addEventListener('click', function () {
-        document.querySelector('.capacity .size.selected').classList.remove('selected');
+        document.querySelector('.almacenamiento .size.selected').classList.remove('selected');
         this.classList.add('selected');
       });
     }

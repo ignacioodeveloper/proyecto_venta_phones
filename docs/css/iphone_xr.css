@@ -11,7 +11,7 @@ html {
 
 .product-iphone-xr {
 	width: 90vw;
-	height: 500px;
+	height: 600px;
 	display: flex;
 }
 
@@ -151,6 +151,7 @@ button.size.selected::after {
 
 
 
+
 h3 { padding-top: 10px;}
 
 @keyframes fadein {
@@ -225,5 +226,9 @@ h3 { padding-top: 10px;}
     footer { display: none;}
     
     h2 {display: none;}
+
+	.btn-primary {
+		text-align: center;
+	}
     
 }
