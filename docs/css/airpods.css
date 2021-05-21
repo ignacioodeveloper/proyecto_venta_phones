@@ -9,7 +9,7 @@ html {
     overflow-x: hidden; 
 }
 
-.product-iphone-xr {
+.product-airpods {
 	width: 90vw;
 	height: 600px;
 	display: flex;
@@ -89,35 +89,8 @@ button:hover {
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
-button.size {
-	position: relative;
-	z-index: 1;
-}
-button.size::before,
-button.size::after {
-	content: '';
-	position: absolute;
-	top: -3px;
-	left: -3px;
-	right: -3px;
-	bottom: -3px;
-	transition: 0.4s;
-}
-button.size::after {
-	z-index: -1;
-	background-color: #FFF;
-	border: 3px solid #EEE;
-}
-button.size::before {
-	z-index: -2;
-	background-image: linear-gradient(to right, #ED008D, #8D00ED);
-}
-button.size.selected::after {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
+
+
 
 .colores_iphone .btn_wrap .black.selected {
 	background-color: #212121;
@@ -127,26 +100,6 @@ button.size.selected::after {
 .colores_iphone .btn_wrap .blue.selected {
 	background-color: #2484E4;
 	color: #FFF;
-}
-
-.colores_iphone .btn_wrap .red.selected {
-	background-color: #AF1E2D;
-	color: #FFF;
-}
-
-.colores_iphone .btn_wrap .yellow.selected {
-	background-color: #FFCE00;
-	color: #212121;
-}
-
-.colores_iphone .btn_wrap .coral.selected {
-	background-color: #FF6C37;
-	color: #FFF;
-}
-
-.colores_iphone .btn_wrap .white.selected {
-	background-color: #EEE;
-	color: #212121;
 }
 
 
@@ -227,6 +180,8 @@ h3 { padding-top: 10px;}
     
     h2 {display: none;}
 
-	.btn-primary { text-align: center;}
+	.btn-primary {
+		text-align: center;
+	}
     
 }
