@@ -31,6 +31,7 @@ a.btn_vermas { width: 80%; text-align: center; }
     #cargador { display: none;}
     #macsafe { display: none;}
 
+
 }
 
 
@@ -51,6 +52,23 @@ a.btn_vermas { width: 80%; text-align: center; }
     #cargador { display: none;}
     #macsafe { display: none;}
     
+
+    
 }
 
 
+
+@media screen and (min-width: 800px){
+
+    #carrusel_movil { display: none;}
+
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    #carrusel_desk { display: none;}
+
+
+}
