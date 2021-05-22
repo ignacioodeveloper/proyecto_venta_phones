@@ -4,6 +4,9 @@
 html {
     overflow-x: hidden; 
 }
+.div-carousel-caption { text-align: center;}
+
+h5 { font-size: 50px;}
 
 a { text-decoration: none; }
 .text1 { font-size: 25px;}
