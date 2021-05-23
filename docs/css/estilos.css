@@ -5,6 +5,7 @@ html {
     overflow-x: hidden; 
 }
 
+.slick-next { background-color: black;}
 
 .div-carousel-caption { text-align: center;}
 
