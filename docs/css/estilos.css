@@ -39,52 +39,22 @@ a.btn_vermas { width: 80%; text-align: center; }
     h5 { font-weight: bold; font-size: 25px;}
     .jumbotron {text-align: center;}
     .card-img-top { height: auto; width: 100%;}
-    #iphone_6 { display: none;}
-    #iphone_7 { display: none;}
-    #iphone_8 { display: none;}
-    #iphone_xr { display: none;}
-    #iphone_x { display: none;}
-    #cargador { display: none;}
-    #macsafe { display: none;}
-
-
 }
 
 
-
-
-
 @media screen and (max-width: 500px) {
-
-    
     .card-img-top { height: auto; width: 100%;}
     .desde {display: none;}
-    #iphone_6 { display: none;}
-    #iphone_7 { display: none;}
-    #iphone_8 { display: none;}
-    #iphone_xr { display: none;}
-    #iphone_x { display: none;}
     .jumbotron { text-align: center;}
-    #cargador { display: none;}
-    #macsafe { display: none;}
-    
-
-    
 }
 
 
 
 @media screen and (min-width: 800px){
-
     #carrusel_movil { display: none;}
-
-
 }
 
 
 @media screen and (max-width: 800px){
-
     #carrusel_desk { display: none;}
-
-
 }
