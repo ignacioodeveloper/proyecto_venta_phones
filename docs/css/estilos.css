@@ -24,14 +24,6 @@ body { background-color: #ecf0f1;}
 a.btn_vermas { width: 80%; text-align: center; }
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 800px) {
     h5 { font-weight: bold; font-size: 25px;}
     .jumbotron {text-align: center;}
@@ -53,9 +45,11 @@ a.btn_vermas { width: 80%; text-align: center; }
 
 @media screen and (min-width: 800px){
     #carrusel_movil { display: none;}
+
 }
 
 
 @media screen and (max-width: 800px){
     #carrusel_desk { display: none;}
+    #carrusel_accesorios_desk { display: none;}
 }
