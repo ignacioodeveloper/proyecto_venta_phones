@@ -1,5 +1,28 @@
 
 
+// google map API
+// inicializar map 
+function initMap() {
+    
+  // latitud de smartphonestore
+  // av andres bello 2425
+  const ubicacion_tienda = { lat: -33.41754, lng: -70.60557 };
+  
+
+  // centrar y dar zoom al mapa
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: ubicacion_tienda,
+  });
+  // markador y posisionamiento 
+  const marker = new google.maps.Marker({
+    position: ubicacion_tienda,
+    map: map,
+  });
+}
+
+
+
 
 
 
@@ -34,9 +57,6 @@ $(document).ready(function(){
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 });

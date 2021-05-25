@@ -24,6 +24,17 @@ body { background-color: #ecf0f1;}
 a.btn_vermas { width: 80%; text-align: center; }
 
 
+
+/* estilo mapa */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+
 @media screen and (max-width: 800px) {
     h5 { font-weight: bold; font-size: 25px;}
     .jumbotron {text-align: center;}
