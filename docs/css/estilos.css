@@ -23,6 +23,17 @@ body { background-color: #ecf0f1;}
 
 a.btn_vermas { width: 80%; text-align: center; }
 
+.p-white { height: 25px; width: 25px; background-color: white; border-radius: 50%; display: inline-block; border: 1px solid black;}
+.p-black { height: 25px; width: 25px; background-color: black; border-radius: 50%; display: inline-block;}
+.p-green { height: 25px; width: 25px; background-color: green; border-radius: 50%; display: inline-block;}
+.p-yellow { height: 25px; width: 25px; background-color: yellow; border-radius: 50%; display: inline-block;}
+.p-purple { height: 25px; width: 25px; background-color: purple; border-radius: 50%; display: inline-block;}
+.p-red { height: 25px; width: 25px; background-color: red; border-radius: 50%; display: inline-block;}
+.p-blue { height: 25px; width: 25px; background-color: blue; border-radius: 50%; display: inline-block;}
+.p-coral { height: 25px; width: 25px; background-color: coral; border-radius: 50%; display: inline-block;}
+
+
+
 
 
 /* estilo mapa */
