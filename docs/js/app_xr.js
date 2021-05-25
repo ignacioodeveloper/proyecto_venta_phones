@@ -17,11 +17,31 @@ document.addEventListener("DOMContentLoaded", function(){
   }); 
 
 
+
+
+
+
+
+
+
+
+
+  
   // menu iphone xr
   window.onload = function () {
     const colour_btn_els = document.querySelectorAll('.colores_iphone .colour');
-    const imagery_el = document.querySelector('.imagery');
+    const almacenamiento_btn_els = document.querySelectorAll('.almacenamiento .size');
+    const imagen_color_xr = document.querySelector('.imagery');
     const image_el = document.querySelector('.imagery .image');
+
+    for (let i = 0; i < almacenamiento_btn_els.length; i++) {
+      let btn = almacenamiento_btn_els[i];
+  
+      btn.addEventListener('click', function () {
+        document.querySelector('.almacenamiento .size.selected').classList.remove('selected');
+        this.classList.add('selected');
+      });
+    }
   
   
     for (let i = 0; i < colour_btn_els.length; i++) {
@@ -30,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function(){
       btn.addEventListener('click', function () {
         document.querySelector('.colores_iphone .colour.selected').classList.remove('selected');
         this.classList.add('selected');
-        image_el.src = "photos/airpods/airpods_" + this.dataset.name + '.png';
-        imagery_el.style.backgroundColor = this.dataset.colour;
+        image_el.src = "photos/iphone/iphone_xr/iphone_xr_" + this.dataset.name + '.png';
+        imagen_color_xr.style.backgroundColor = this.dataset.colour;
       });
     }
   }
