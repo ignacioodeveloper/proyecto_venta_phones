@@ -21,8 +21,12 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css'%}">
 
-
+    <!-- slick -->
+    <link rel="stylesheet" href="{% static 'slick/slick.css%'}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css'%}">
 
     <title>SmartPhone Store</title>
 
@@ -546,7 +550,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js'%}"></script>
 
     <!-- script google maps -->
     <script
@@ -555,7 +559,7 @@
     </script>
 
     <!-- contectar a app.js -->
-    <script src="js/app.js"></script>
+    <script src="{% static 'js/app.js'%}"></script>
 
 </body>
 
