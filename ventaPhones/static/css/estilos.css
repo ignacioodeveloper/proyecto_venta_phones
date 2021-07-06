@@ -1,0 +1,77 @@
+* { padding: 0; 
+    margin: 0;
+    }
+html {
+    overflow-x: hidden; 
+}
+
+.slick-next { background-color: black;}
+
+
+h5 { font-size: 50px;}
+
+a { text-decoration: none; }
+.text1 { font-size: 25px;}
+
+body { background-color: #ecf0f1;}
+
+#contru { position: fixed; }
+
+.b-example-divider { height: 5rem; }
+
+#footer-img { text-align: center; width: 100%; height: 600;}
+
+a.btn_vermas { width: 80%; text-align: center; }
+
+.p-white { height: 25px; width: 25px; background-color: white; border-radius: 50%; display: inline-block; border: 1px solid black;}
+.p-black { height: 25px; width: 25px; background-color: black; border-radius: 50%; display: inline-block;}
+.p-green { height: 25px; width: 25px; background-color: green; border-radius: 50%; display: inline-block;}
+.p-yellow { height: 25px; width: 25px; background-color: yellow; border-radius: 50%; display: inline-block;}
+.p-purple { height: 25px; width: 25px; background-color: purple; border-radius: 50%; display: inline-block;}
+.p-red { height: 25px; width: 25px; background-color: red; border-radius: 50%; display: inline-block;}
+.p-blue { height: 25px; width: 25px; background-color: blue; border-radius: 50%; display: inline-block;}
+.p-coral { height: 25px; width: 25px; background-color: coral; border-radius: 50%; display: inline-block;}
+
+
+
+
+
+/* estilo mapa */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+
+@media screen and (max-width: 800px) {
+    h5 { font-weight: bold; font-size: 25px;}
+    .jumbotron {text-align: center;}
+    .card-img-top { height: auto; width: 100%;}
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-img-top { height: auto; width: 100%;}
+    .desde {display: none;}
+    .jumbotron { text-align: center;}
+    #carrusel_iphone_desk { display: none;}
+}
+
+@media screen and (min-width: 500px) {
+    #card_iphone_movil { display: none; }
+}
+
+
+@media screen and (min-width: 800px){
+    #carrusel_movil { display: none;}
+
+}
+
+
+@media screen and (max-width: 800px){
+    #carrusel_desk { display: none;}
+    #carrusel_accesorios_desk { display: none;}
+}
