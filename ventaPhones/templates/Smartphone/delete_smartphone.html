@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Eliminar Smartphone {% endblock title %}
+
+{% block content %}
+<body>
+    
+    <div class="container mb-3 mt-3">
+    <form method="POST">
+        {% csrf_token %}
+
+        <div>
+            <h3>Enserio quieres eliminar a {{ object.nombre }} de la lista de productos?</h3>
+            <button class="btn btn-danger" type="submit">SI.</button>
+
+            <a class="btn btn-primary" href="{% url 'list_smartphones' %}">CANCELAR</a>
+        </div>
+
+    </form>
+    </div>
+
+</body>
+
+{% endblock %}

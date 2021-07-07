@@ -24,7 +24,7 @@ urlpatterns = [
     
     # ===== 1 =====
     # home path
-    path('', views.ok),
+    path('', views.ok, name='home'),
     # path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('smartphone/', include('apps.Smartphone.urls')),
 

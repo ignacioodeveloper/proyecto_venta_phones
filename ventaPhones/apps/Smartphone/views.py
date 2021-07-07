@@ -1,3 +1,4 @@
+from re import template
 from django.shortcuts import render
 from django.http import HttpResponse
 from apps.Smartphone.models import Smartphone
@@ -26,6 +27,11 @@ class SmartphoneUpdate(UpdateView):
     model = Smartphone
     form_class = SmartphoneForm
     template_name = 'Smartphone/form_smartphone.html'
+    success_url = reverse_lazy('list_smartphones')
+    
+class SmartphoneDelete(DeleteView):
+    model = Smartphone
+    template_name = 'Smartphone/delete_smartphone.html'
     success_url = reverse_lazy('list_smartphones')
 
     

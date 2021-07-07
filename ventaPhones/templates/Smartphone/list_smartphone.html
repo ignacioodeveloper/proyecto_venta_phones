@@ -40,7 +40,7 @@
             <td>{{ smartphone.color }}</td>
             <td>{{ smartphone.almacenamiento }}</td>
             <td><a class="btn btn-primary" href="{% url 'update_smartphone' smartphone.id %}">EDITAR</a></td>
-            <td><a class="btn btn-danger" href="#">ELIMINAR</a></td>
+            <td><a class="btn btn-danger" href="{% url 'delete_smartphone' smartphone.id %}">ELIMINAR</a></td>
           </tr>
         </tbody>
 
