@@ -18,6 +18,11 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from apps.Smartphone import views
 
+from django.contrib.auth import views as auth_views
+from django.contrib.auth.views import LoginView, LogoutView
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     
@@ -25,7 +30,10 @@ urlpatterns = [
     # ===== 1 =====
     # home path
     path('', views.ok, name='home'),
-    # path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('smartphone/', include('apps.Smartphone.urls')),
+    
+    # path login/logout
+    path('login/', LoginView.as_view(redirect_authenticated_user=True, template_name='Usuario/login.html'), name='login'),
+    path('logout/', LogoutView.as_view(template_name='UsuariO/logout.html'), name='logout'),    
 
 ]
