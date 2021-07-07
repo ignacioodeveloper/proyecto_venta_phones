@@ -18,6 +18,8 @@ def ok(request):
     return render(request, 'home.html', context)
 
 
+
+
 class SmartphoneList(ListView):
     model = Smartphone
     template_name = 'Smartphone/list_smartphone.html'
@@ -34,5 +36,9 @@ class SmartphoneDelete(DeleteView):
     template_name = 'Smartphone/delete_smartphone.html'
     success_url = reverse_lazy('list_smartphones')
 
+
+class SmartphoneListCliente(ListView):
+    model = Smartphone
+    template_name = 'Smartphone/cliente_smartphone.html'
     
     

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Lista Smartphones Cliente {% endblock title %}
+
+
+{% block content %}
+
+    {% include 'divider.html' %}
+
+    <div class="container jumbotron">
+        <h4> <a href="index_accesorios.html">iPhone</a> </h4>
+        <p>Todos los iPhone disponibles en un solo lugar!</p>
+    </div>
+
+
+    {% if object_list %}
+
+    
+    
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            {% for smartphone in object_list %}
+            <div class="col">
+    
+              <div class="card">
+                <img src= ../../static/images/{{ smartphone.image }} style="width: 200px; text-align: center;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+    
+                    <h1>{{ smartphone.nombre }}</h1>
+                
+                    <h1 class="text1">$ {{ smartphone.precio }}</h1>
+                </div>
+              </div>
+              
+            </div>
+            {% endfor %}
+        </div>
+    
+    </div>
+    
+    
+
+    {% else %}
+        <h1>No hay registro de smartphones</h1>
+    {% endif %}
+
+
+
+{% endblock %}
+
+{% block a %} Lista de Productos Disponibles solo en SmartPhoneStore :) {% endblock a %}
+
+
+<!-- <div class="container">
+    <div class="card-group">
+        {% for smartphone in object_list %}
+        <div class="card mt-3">
+            <div class="pro-1 align-items-center p-2 text-center">
+                <img src=../../static/images/{{ smartphone.image }}  class="card-img-top" style="width: 200px;">
+                <div class="card-body">
+                  <h1 class="text-center">{{ smartphone.nombre }}</h1>
+                  <p class="text1 text-center fw-bold">{{ smartphone.color }}</p>
+                  <p class="text1 text-center">$ {{ smartphone.precio }}</p>
+                </div>
+                <a class="btn btn-primary p-3 mt-3" href="#">Comprar</a>
+            </div>
+
+        </div>
+        
+        {% endfor %}
+
+      </div>
+
+</div> -->
