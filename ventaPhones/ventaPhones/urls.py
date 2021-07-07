@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from apps.Smartphone import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,7 +24,8 @@ urlpatterns = [
     
     # ===== 1 =====
     # home path
-    
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', views.ok),
+    # path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('smartphone/', include('apps.Smartphone.urls')),
 
 ]

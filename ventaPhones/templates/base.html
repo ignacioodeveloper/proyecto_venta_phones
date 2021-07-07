@@ -16,20 +16,36 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
-    {% block css %}
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+        
 
-    {% endblock css %}
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
 
-    <title>{% block title %} base.html {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'slick/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css'%}">
+
+    
+    <title>{% block title %} {% endblock title %}</title>
 
 </head>
 <body>
     
+    
     {% include 'navbar.html' %}
 
 
+    
+    {% block content %}
+    
+
+    {% endblock %}
+
+
     {% include 'scripts.html' %}
+    
+    {% include 'footer.html' %}
 
 </body>
     

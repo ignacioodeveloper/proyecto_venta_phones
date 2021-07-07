@@ -1,0 +1,112 @@
+
+{% load static %}
+<div class="container-fluid p-0" id="carrusel_desk">
+
+    <div id="carouselExampleIndicators_desk" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleIndicators_desk" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_desk" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_desk" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid d-block" src="{% static 'images/carrusel/carrusel_1.jpg'%}" alt="1_img">
+                <div class="carousel-caption d-none d-md-block text-dark font-weight-bold">
+                    <h5> <span class="text-danger">i</span><span class="text-success">P</span><span class="text-info">h</span><span class="text-primary">o</span><span class="text-warning">n</span><span class="text-dark">e</span>
+                        12 ya disponible</h5>
+                    <a class="btn btn-primary p-3 mt-3 text-white" href="index_iphone_xr.html" role="button"> <span class="text-uppercase"> comprar ahora </span></a>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-block" src="{% static 'images/carrusel/carrusel_2.jpg'%}" alt="2_img">
+                <div class="carousel-caption d-none d-md-block text-white font-weight-bold">
+                    <h5>AirPods PRO</h5>
+                    <a class="btn btn-primary p-3 mt-3 text-white" href="index_iphone_xr.html" role="button"> <span class="text-uppercase"> comprar ahora </span></a>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img class="img-fluid d-block" src="{% static 'images/carrusel/carrusel_3.jpg'%}" alt="3_img">
+                <div class="carousel-caption d-none d-md-block text-white font-weight-bold">
+                    <h5>PROXIMAMENTE</h5>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_desk"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators_desk"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div>
+
+<div class="container px-0" id="carrusel_movil">
+
+    <div id="carouselExampleIndicators_mov" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleIndicators_mov" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_mov" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_mov" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="{% static 'images/carrusel/carrusel_1_mov.jpg'%}" alt="1_img">
+                <div class="carousel-caption text-dark font-weight-bold">
+                    <h5>iPhone 12 disponible</h5>
+                    <a class="btn btn-link text-link" href="index_iphone_xr.html" role="button"> <span class="text-uppercase"> comprar ahora </span></a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>                    
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="{% static 'images/carrusel/carrusel_2_mov.jpg' %}" alt="2_img">
+                <div class="carousel-caption">
+                    <h5>PROXIMAMENTE</h5>
+                    <h2>iPad Pro</h2>
+                    <p>con el superpoderoso chip M1 de apple</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="{% static 'images/carrusel/carrusel_mov_3.jpg' %}" alt="3_img">
+                <div class="carousel-caption text-dark font-weight-bold">
+                    <h5>AirPods Pro</h5>
+                    <a class="btn btn-link text-link" href="index_iphone_xr.html" role="button"> <span class="text-uppercase"> comprar ahora </span></a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>       
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_mov"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators_mov"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div> 

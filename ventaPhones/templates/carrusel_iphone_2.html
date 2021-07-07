@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!-- carrusel iphone items desk -->
+    <div class="container" id="carrusel_iphone_desk">
+
+        <div class="jumbotron">
+            <h4> <a href="index_accesorios.html">iPhone</a> </h4>
+            <p>Todos los iPhone disponibles en un solo lugar!</p>
+        </div>
+
+        <div class="responsive">
+
+
+            {% for product in smartphones %}
+                                                
+            <div class="col-md-3" >
+                <div class="card mt-3">
+                    <div class="pro-1 align-items-center p-2 text-center">
+                         <img
+                            src="" class="card-img-top" alt="iphone_11">
+
+                        <h1>{{ product.nombre }}</h1>
+
+
+                        <div class="desde mt-3 text-dark"> <span class="desde d-block">desde: </span> 
+                        </div>
+                        <span class="text1">${{ product.precio }}</span>
+                    </div>
+
+
+                    <a class="btn btn-primary p-3 mt-3" href="index_iphone_xr.html" role="button"> <span class="text-uppercase"> comprar </span></a>
+
+                </div>
+            </div>
+            {% endfor %}
+
+
+
+          </div>
+    </div>

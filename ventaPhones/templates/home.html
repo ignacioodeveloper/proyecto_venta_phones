@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block css %} {% endblock css %}
+
 {% block title %} HOME {% endblock title %}
-{% block content %}
 
-<h2>hola</h2>
 
-{% endblock content %}
+
+{% block content %} 
+
+
+    {% include 'carrusel.html' %}    
+
+    {% include 'carrusel_iphone.html' %}
+
+    <div id="map"></div>
+
+
+{% endblock %}
+
