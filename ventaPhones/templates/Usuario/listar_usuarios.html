@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Listar Usuarios {% endblock %}
+
+
+
+{% block titulo %}  Lista de Usuarios {% endblock %}
+{% block subtitulo %} ACCESO RESTRINGIDO PARA CLIENTES {% endblock %}
+
+{% block content %}
+
+
+
+
+{% if object_list %}
+
+
+
+
+
+    <table class="container table table-hover">
+
+        <thead>
+        <tr>
+
+            <td>Nombre</td>
+            <td>Nombre</td>
+            <td>Email</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for usuario in object_list %}
+        <tr>
+            <td>{{ usuario.username }}</td>
+            <td>{{ usuario.first_name }}</td>
+            <td>{{ usuario.email }}</td>
+        </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+
+{% else %}
+
+    <h1>Lo sentimos no hay usuarios registrados :(</h1>
+
+
+{% endif %}
+{% endblock %}

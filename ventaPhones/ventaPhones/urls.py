@@ -31,9 +31,10 @@ urlpatterns = [
     # home path
     path('', views.ok, name='home'),
     path('smartphone/', include('apps.Smartphone.urls')),
+    path('usuario/', include('apps.Usuario.urls')),
     
     # path login/logout
     path('login/', LoginView.as_view(redirect_authenticated_user=True, template_name='Usuario/login.html'), name='login'),
-    path('logout/', LogoutView.as_view(template_name='UsuariO/logout.html'), name='logout'),    
+    path('logout/', LogoutView.as_view(template_name='Usuario/logout.html'), name='logout'),    
 
 ]

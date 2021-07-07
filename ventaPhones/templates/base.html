@@ -36,6 +36,13 @@
     {% include 'navbar.html' %}
 
 
+
+    <div class="jumbotron container">
+        <h4> <a href="#">{% block titulo %}{% endblock titulo %}</a> </h4>
+        <p>{% block subtitulo %}{% endblock subtitulo %}</p>
+    </div>
+
+
     
     {% block content %}
     

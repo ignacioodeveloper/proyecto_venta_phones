@@ -13,13 +13,14 @@
         <p>Todos los iPhone disponibles en un solo lugar!</p>
     </div>
 
+
     <div>
 
 
       {% if object_list %}
             
             
-      {% for smartphone in object_list %}
+      
 
       <table class="table table-hover">
 
@@ -33,6 +34,7 @@
           </tr>
         </thead>
         <tbody>
+          {% for smartphone in object_list %}
           <tr>
             <td><img src= ../../static/images/{{ smartphone.image }} style="width: 200px; text-align: center;" ></td>
             <td>{{ smartphone.nombre }}</td>
@@ -42,11 +44,12 @@
             <td><a class="btn btn-primary" href="{% url 'update_smartphone' smartphone.id %}">EDITAR</a></td>
             <td><a class="btn btn-danger" href="{% url 'delete_smartphone' smartphone.id %}">ELIMINAR</a></td>
           </tr>
+          {% endfor %}
         </tbody>
 
       </table>
 
-      {% endfor %}
+      
       {% else %}
       
           <h1>Lo sentimos no hay ningun smartphone registrado :(</h1>
@@ -55,8 +58,9 @@
 
 
 
-</div>
+    </div>
 
+</div>
 
 {% endblock %}
 
