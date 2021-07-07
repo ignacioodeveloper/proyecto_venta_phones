@@ -12,7 +12,7 @@ COLORES_OPCIONES = (
     ('black', 'black'),
     ('red', 'red'),
     ('white','white'),
-    
+    ('blue', 'blue'),
 )
 
 class Smartphone(models.Model):

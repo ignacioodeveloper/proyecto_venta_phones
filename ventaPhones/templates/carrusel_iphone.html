@@ -1,35 +1,43 @@
 {% load static %}
 
-<div class="container" id="carrusel_iphone_desk">
+    <div class="container" id="carrusel_iphone_desk">
 
-    <div class="jumbotron">
-        <h4> <a href="index_accesorios.html">iPhone</a> </h4>
-        <p>Todos los iPhone disponibles en un solo lugar!</p>
-    </div>
-
-    <div class="responsive">
-
-
-        {% if smartphones %}
-        
-        
-        <div class="card">
-            {% for smartphone in smartphones %}
-            <img src= ../../static/images/{{ smartphone.image }} style="width: 100px;">
-            <div class="card-body">
-                <h5 class="card-title">{{ smartphone.nombre }}</h5>
-                <p class="card-text">{{ smartphone.precio }}</p>
-                <a class="btn btn-primary" href="#">Comprar</a>
-
-            </div>
-            {% endfor %}
+        <div class="jumbotron">
+            <h4> <a href="index_accesorios.html">iPhone</a> </h4>
+            <p>Todos los iPhone disponibles en un solo lugar!</p>
         </div>
 
-        {% else %}
-        
-            <h1>Lo sentimos no hay ningun smartphone registrado :(</h1>
-        
-        {% endif %} 
+        <div class="responsive">
 
-      </div>
-</div>
+
+            {% if smartphones %}
+            
+            
+            {% for smartphone in smartphones %}
+            <div class="col-md-3">
+                <div class="card mt-3">
+                    
+                    <div class="pro-1 align-items-center p-2 text-center">
+                    <img src= ../../static/images/{{ smartphone.image }} style="width: 100px;" class="text-center">
+                    
+
+
+                    <h1>{{ smartphone.nombre }}</h1>
+                    <h1 class="text1" >${{ smartphone.precio }}</h1>
+
+                    <a class="btn btn-primary p-3 mt-3" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+            {% else %}
+            
+                <h1>Lo sentimos no hay ningun smartphone registrado :(</h1>
+            
+            {% endif %} 
+
+        </div>
+    </div>
+
+
