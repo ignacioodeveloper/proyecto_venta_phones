@@ -1,5 +1,7 @@
 {% load static %}
 
+    <div class="b-example-divider"></div>
+
     <div class="container" id="carrusel_iphone_desk">
 
         <div class="jumbotron">
@@ -18,15 +20,16 @@
                 <div class="card mt-3">
                     
                     <div class="pro-1 align-items-center p-2 text-center">
-                    <img src= ../../static/images/{{ smartphone.image }} style="width: 100px;" class="text-center">
+                    <img src= ../../static/images/{{ smartphone.image }} style="width: 200px; text-align: center;" >
                     
 
 
                     <h1>{{ smartphone.nombre }}</h1>
                     <h1 class="text1" >${{ smartphone.precio }}</h1>
 
-                    <a class="btn btn-primary p-3 mt-3" href="#">Comprar</a>
+                    
                     </div>
+                    <a class="btn btn-primary p-3 mt-3" href="#">Comprar</a>
                 </div>
             </div>
 
