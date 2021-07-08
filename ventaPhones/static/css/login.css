@@ -1,0 +1,65 @@
+
+#registro {
+    margin: 20px auto;
+    padding: 10px;
+    width: 300px;
+    height: 420px;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+
+h1 {
+    text-align: center;
+    
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    padding: 25px 0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    transition: border .2s, background-color 2.;
+}
+
+form .field {
+    background-color: #ECF0F1;
+}
+
+form .field:focus {
+    border: 2px solid #3498D8;
+}
+
+form #btn-login {
+    background-color: #0D6EFD;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+form #btn:hover,
+form #btn:active {
+    background-color: #0D6EFD ;
+    border: 2px solid #0D6EFD;
+}
+
+.pass-link {
+    text-align: center;
+}
+
+
+.pass-link a:link,
+.pass-link a:visited {
+    font-size: 15px;
+
+}
+
+
+
