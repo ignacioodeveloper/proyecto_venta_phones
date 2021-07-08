@@ -8,10 +8,15 @@ Herramientas:
 -JS
 -FlexGrid
 -Jquery validation
-Repositorio GIT
-https://github.com/luxossj/proyecto_venta_phones
+-Slicker
+-Django
+-Django Rest Framework
+-Monster 500 ml
 
+Repositorio GIT
+
+https://github.com/luxossj/proyecto_venta_phones
 
 enlace video YT
 
-https://youtu.be/q7ZI_yHi_Rs
+https://youtu.be/rOvuz1IiHYE
