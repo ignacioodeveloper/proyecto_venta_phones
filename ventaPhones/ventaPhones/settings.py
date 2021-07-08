@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # apps/
     'apps.Smartphone',
     'apps.Usuario',
+    # rest_framework
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

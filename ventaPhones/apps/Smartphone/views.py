@@ -1,4 +1,5 @@
 from re import template
+from django.db.models.query import QuerySet
 from django.shortcuts import render
 from django.http import HttpResponse
 from apps.Smartphone.models import Smartphone
@@ -6,6 +7,10 @@ from apps.Smartphone.models import Smartphone
 from .forms import SmartphoneForm
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+
+from rest_framework import generics
+from .serializers import Smartphone, SmartphoneSerializer
+
 
 # def base(request):
     
@@ -41,4 +46,15 @@ class SmartphoneListCliente(ListView):
     model = Smartphone
     template_name = 'Smartphone/cliente_smartphone.html'
     
+    
+    
+# VIEWS DE SERIALIZER
+
+class API_objects(generics.ListCreateAPIView):
+    queryset = Smartphone.objects.all()
+    serializer_class = SmartphoneSerializer
+    
+class API_objects_details(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Smartphone.objects.all()
+    serializer_class = SmartphoneSerializer
     
